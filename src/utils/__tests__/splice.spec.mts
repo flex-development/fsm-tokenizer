@@ -13,7 +13,8 @@ describe('unit:utils/splice', () => {
     [[chars.digit0, chars.digit1], 0, 2, null, [chars.digit0, chars.digit1]],
     [[chars.digit2, chars.digit3], -1, chars.digit2, null, [chars.digit3]],
     [[chars.digit4], -2, chars.digit2, null, [chars.digit4]],
-    [[codes.eof, codes.eof], chars.digit0, 1, veryLargeList, [codes.eof]]
+    [[codes.eof, codes.eof], chars.digit0, 1, veryLargeList, [codes.eof]],
+    [[codes.eof, codes.eof], 1, 0, veryLargeList, []]
   ])('should return removed items (%#)', (
     list,
     start,

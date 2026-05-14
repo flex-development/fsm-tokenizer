@@ -3,7 +3,7 @@
     "allowImportingTsExtensions": false,
     "allowJs": false,
     "checkJs": false,
-    "customConditions": ["fsm-tokenizer", "production", "import", "node"],
+    "customConditions": ["fsm-tokenizer"],
     "declarationMap": false,
     "noEmitOnError": true,
     "outDir": "dist",
@@ -11,7 +11,7 @@
     "sourceMap": false,
     "target": "es2024"
   },
-  "exclude": ["**/__tests__/**"],
+  "exclude": ["**/__mocks__/**", "**/__tests__/**"],
   "extends": "./tsconfig.json",
   "files": [
     "typings/@flex-development/fsm-tokenizer/index.d.mts",

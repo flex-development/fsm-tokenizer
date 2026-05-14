@@ -4,12 +4,12 @@
 ---
 codecov:
   notify:
-    after_n_builds: 1
+    after_n_builds: 6
     wait_for_ci: true
   require_ci_to_pass: true
 
 comment:
-  after_n_builds: 1
+  after_n_builds: 6
   behavior: default
   layout: header,diff,flags,components,tree,footer
   require_base: false
@@ -84,7 +84,27 @@ coverage:
         threshold: 0%
 
 flags:
-  node23:
+  bun-canary:
+    carryforward: false
+    paths:
+      - src/
+  bun-latest:
+    carryforward: false
+    paths:
+      - src/
+  node26:
+    carryforward: false
+    paths:
+      - src/
+  node25:
+    carryforward: false
+    paths:
+      - src/
+  node24:
+    carryforward: false
+    paths:
+      - src/
+  node22:
     carryforward: false
     paths:
       - src/

@@ -20,7 +20,7 @@ import type { List, Numeric } from '@flex-development/fsm-tokenizer'
  *  utils
  *
  * @template {unknown} T
- *  List item type
+ *  The list item type
  *
  * @this {void}
  *
@@ -33,7 +33,7 @@ import type { List, Numeric } from '@flex-development/fsm-tokenizer'
  * @param {List<T> | null | undefined} [items]
  *  The items to inject into `list`
  * @return {T[]}
- *  Removed items
+ *  The list of removed items
  */
 function splice<T>(
   this: void,
@@ -46,7 +46,7 @@ function splice<T>(
   if (typeof start !== 'number') start = +start
 
   /**
-   * Removed items.
+   * The list of removed items.
    *
    * @const {T[]} removed
    */
@@ -60,7 +60,7 @@ function splice<T>(
   }
 
   // clamp `remove` in the range [0, Number.POSITIVE_INFINITY].
-  remove = Math.max(typeof remove === 'number' ? remove : +remove, 0)
+  remove = Math.max(+remove, 0)
 
   // no need to chunk if there are less than `v8MaxSafeChunkSize` items.
   if (items.length < constants.v8MaxSafeChunkSize) {
@@ -76,7 +76,7 @@ function splice<T>(
     let k: number = 0
 
     // delete `remove` number of items from `start`.
-    if (remove) removed.push(...list.splice(start, remove))
+    removed.push(...list.splice(start, remove))
 
     // insert items in chunks to not cause stack overflows.
     while (k < items.length) {

@@ -3,10 +3,10 @@
     "allowImportingTsExtensions": true,
     "allowJs": true,
     "alwaysStrict": true,
-    "customConditions": ["fsm-tokenizer", "development", "node"],
+    "customConditions": ["fsm-tokenizer", "development"],
     "declaration": true,
     "declarationMap": true,
-    "lib": ["es2024"],
+    "lib": ["es2024", "dom"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "newLine": "lf",
@@ -22,12 +22,5 @@
   },
   "exclude": ["coverage", "dist", "node_modules"],
   "extends": "@tsconfig/strictest/tsconfig",
-  "include": ["**/**.json", "**/**.mjs", "**/**.mts", "**/**.ts"],
-  "mdx": {
-    "plugins": [
-      "remark-directive",
-      "remark-frontmatter",
-      "remark-gfm"
-    ]
-  }
+  "include": ["**/**.json", "**/**.mjs", "**/**.mts", "**/**.ts"]
 }

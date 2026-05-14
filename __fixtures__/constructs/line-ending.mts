@@ -38,10 +38,6 @@ declare module '@flex-development/fsm-tokenizer' {
   interface TokenInfo {
     value?: string | null | undefined
   }
-
-  interface TokenTypeMap {
-    lineEnding: tt.lineEnding
-  }
 }
 
 /**

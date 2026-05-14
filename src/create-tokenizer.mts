@@ -113,11 +113,11 @@ function createTokenizer(this: void, options: Options): TokenizeContext {
    * Create a new token.
    *
    * @param {TokenType} type
-   *  Token type
+   *  The token type
    * @param {TokenInfo} info
-   *  Token info
+   *  The token info
    * @return {Token}
-   *  New token
+   *  The new token
    */
   const token: TokenFactory = options.token ?? function token(
     type: TokenType,
@@ -494,7 +494,7 @@ function createTokenizer(this: void, options: Options): TokenizeContext {
       debug('position after eol: %o', place)
     } else if (tab(code)) {
       place.column += options.tabSize ?? constants.tabSize
-      if (code < 0) place.offset++
+      /* v8 ignore else -- @preserve */ if (code < 0) place.offset++
     } else if (
       code !== codes.empty &&
       code !== codes.eof &&
@@ -882,12 +882,14 @@ function createTokenizer(this: void, options: Options): TokenizeContext {
       assert(chunk !== undefined, 'expected `chunk`')
 
       // normalize buffer index to loop through buffer chunk.
-      if (place._bufferIndex < 0) place._bufferIndex = 0
+      /* v8 ignore else -- @preserve */ if (place._bufferIndex < 0) {
+        place._bufferIndex = 0
+      }
 
       // loop through buffer chunk to deal with character codes.
       while (place._index === chunkIndex && place._bufferIndex < chunk.length) {
         /**
-         * Current character code.
+         * The current character code.
          *
          * @const {Code | undefined} code
          */

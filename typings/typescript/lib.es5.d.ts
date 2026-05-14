@@ -4,12 +4,12 @@ declare global {
      * Check if `value` is an array.
      *
      * @template {any} T
-     *  Array item type
+     *  The array item type
      *
      * @param {unknown} value
-     *  Value to check
+     *  The value to check
      * @return {value is ReadonlyArray<T> | T[]}
-     *  `true` if `value` is an array
+     *  `true` if `value` is an array, `false` otherwise
      */
     isArray<T>(value: unknown): value is T[] | readonly T[]
   }

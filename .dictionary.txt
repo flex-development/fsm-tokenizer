@@ -2,14 +2,9 @@ attw
 cefc
 commitlintrc
 dedupe
-dessant
 devlop
-docast
-dohm
-dprint
 fbca
 gemoji
-ggshield
 gpgsign
 hmarr
 htab
@@ -19,9 +14,6 @@ nvmrc
 onreturn
 onsuccessfulcheck
 onsuccessfulconstruct
-pkgs
-remarkrc
-sarif
 shfmt
 succ
 unstub

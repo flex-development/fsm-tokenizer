@@ -2,7 +2,6 @@
 
 exports[`e2e:fsm-tokenizer > should expose public api 1`] = `
 [
-  "initialize",
   "createTokenizer",
   "chars",
   "codes",
@@ -10,6 +9,7 @@ exports[`e2e:fsm-tokenizer > should expose public api 1`] = `
   "createPreprocess",
   "preprocess",
   "tokenize",
+  "initialize",
   "eof",
   "eos",
   "eol",

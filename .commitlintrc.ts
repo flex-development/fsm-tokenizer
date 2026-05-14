@@ -4,10 +4,7 @@
  * @see https://commitlint.js.org
  */
 
-import {
-  RuleConfigSeverity as Severity,
-  type UserConfig
-} from '@commitlint/types'
+import { RuleConfigSeverity, type UserConfig } from '@commitlint/types'
 import { scopes } from '@flex-development/commitlint-config'
 
 /**
@@ -18,7 +15,7 @@ import { scopes } from '@flex-development/commitlint-config'
 const config: UserConfig = {
   extends: ['@flex-development'],
   rules: {
-    'scope-enum': [Severity.Error, 'always', scopes([
+    'scope-enum': [RuleConfigSeverity.Error, 'always', scopes([
       'chore',
       'constructs',
       'errors'

@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`e2e:fsm-tokenizer > should expose public api 1`] = `
+[
+  "createTokenizer",
+  "chars",
+  "codes",
+  "ev",
+  "createPreprocess",
+  "preprocess",
+  "tokenize",
+  "initialize",
+  "eof",
+  "eos",
+  "eol",
+  "isCode",
+  "push",
+  "resolveAll",
+  "serializeChunks",
+  "sliceChunks",
+  "sliceSerialize",
+  "splice",
+  "htab",
+  "tab",
+]
+`;

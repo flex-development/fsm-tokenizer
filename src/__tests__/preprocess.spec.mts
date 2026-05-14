@@ -25,12 +25,13 @@ describe('unit:preprocess', () => {
 
   describe('preprocess', () => {
     it.each<[FileLike | Value | null | undefined]>([
+      [undefined],
       [chars.break],
       [chars.ht],
       [chars.lf + chars.cr + chars.crlf],
       [{ value: 'hello' + chars.ht + 'world' }],
       [{ value: Buffer.from('--debug=true --pizza-type meat --small') }]
-    ])('should return character code chunk list (%#)', value => {
+    ])('should return character code chunk list (%j)', value => {
       // Act
       const result = subject(value, null, true)
       const length = result.length
