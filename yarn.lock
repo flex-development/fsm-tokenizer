@@ -1480,7 +1480,7 @@ __metadata:
     "@flex-development/unist-util-builder": "npm:2.0.0"
     "@flex-development/unist-util-inspect": "npm:1.1.0"
     "@flex-development/unist-util-types": "npm:1.6.1"
-    "@flex-development/vfile-location": "npm:1.1.0"
+    "@flex-development/vfile-location": "npm:1.1.1"
     "@rollup/plugin-node-resolve": "npm:16.0.3"
     "@tsconfig/strictest": "npm:2.0.8"
     "@types/concat-stream": "npm:2.0.3"
@@ -1991,14 +1991,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/vfile-location@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@flex-development/vfile-location@npm:1.1.0"
+"@flex-development/vfile-location@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@flex-development/vfile-location@npm:1.1.1"
   dependencies:
     "@flex-development/unist-util-types": "npm:1.6.1"
-    "@types/unist": "npm:3.0.2"
-    vfile: "npm:6.0.2"
-  checksum: 10/3f217ede58e7f8855b412e7f25f78983a4c5e4256c1c3ab330efc7f8dbe0e30ca6983944950c1ac3b74081afba2d23688efef264c9e11bae796593ec85921c52
+    "@types/unist": "npm:3.0.3"
+    vfile: "npm:6.0.3"
+  checksum: 10/38d232c21560de4695f963b964b7c38db175018eed5acc59af5f18ba5e8c2901854ac5d420193961a4f6a1c82eed03410b043f81ba168ff08bf995b7720c2e43
   languageName: node
   linkType: hard
 
@@ -11727,17 +11727,6 @@ __metadata:
     vfile: "npm:^6.0.0"
     vfile-message: "npm:^4.0.0"
   checksum: 10/0dbbc8adeb73bb24b5f723e947122e1ae7b6bd0c5ff3fd1ae0ef4a3066f74be00425102c95aa4eaa0f529ba05237255fe8342af76661b0ba6aee3f4c16ca135f
-  languageName: node
-  linkType: hard
-
-"vfile@npm:6.0.2":
-  version: 6.0.2
-  resolution: "vfile@npm:6.0.2"
-  dependencies:
-    "@types/unist": "npm:^3.0.0"
-    unist-util-stringify-position: "npm:^4.0.0"
-    vfile-message: "npm:^4.0.0"
-  checksum: 10/8c36b4887b071aa9215a16c96916e96e75f3f3516cb87fa7ba1ec79fda3a1d87b66068e56b73f01c249b8fefa897dc52e3a6c736fd1053133ad3920f33482756
   languageName: node
   linkType: hard
 
