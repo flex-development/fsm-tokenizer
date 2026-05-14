@@ -1,3 +1,13 @@
+## [1.0.0-alpha.5](https://github.com/flex-development/fsm-tokenizer/compare/1.0.0-alpha.4...1.0.0-alpha.5) (2026-05-14)
+
+### :pencil: Documentation
+
+- [[`004d377`](https://github.com/flex-development/fsm-tokenizer/commit/004d377dca15b6d1b34f88437c498b9490cb78a4)] add badges for monthly downloads and install size
+
+### :house_with_garden: Housekeeping
+
+- [[`ccf8145`](https://github.com/flex-development/fsm-tokenizer/commit/ccf81457b6b37324af6bd218df40d7b333ad5f6f)] `yarn pack` -> `npm pack`
+
 ## [1.0.0-alpha.4](https://github.com/flex-development/fsm-tokenizer/compare/1.0.0-alpha.3...1.0.0-alpha.4) (2026-05-14)
 
 ### :package: Build
@@ -586,6 +596,7 @@
 
 - [[`85f91f2`](https://github.com/flex-development/fsm-tokenizer/commit/85f91f22fbf2dcb23c07fae8eaf5b552841d15d5)] api
 - [[`3d662fc`](https://github.com/flex-development/fsm-tokenizer/commit/3d662fc675a0a92679b9fd040acd929b1a7f610a)] api
+
 
 
 
