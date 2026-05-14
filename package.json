@@ -133,7 +133,7 @@
   "dependencies": {
     "@flex-development/unist-util-builder": "2.0.0",
     "@flex-development/unist-util-types": "1.6.1",
-    "@flex-development/vfile-location": "1.1.0",
+    "@flex-development/vfile-location": "1.1.1",
     "@types/debug": "4.1.12",
     "debug": "4.4.1",
     "devlop": "1.1.0"
