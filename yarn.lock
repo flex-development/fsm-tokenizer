@@ -1513,6 +1513,7 @@ __metadata:
     remark: "npm:15.0.1"
     remark-cli: "npm:12.0.1"
     rollup: "npm:4.60.3"
+    rollup-plugin-cleanup: "npm:3.2.1"
     rollup-plugin-dts: "npm:6.4.1"
     sh-syntax: "npm:0.5.8"
     to-vfile: "npm:8.0.0"
@@ -5590,6 +5591,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"estree-walker@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "estree-walker@npm:0.6.1"
+  checksum: 10/b8da7815030c4e0b735f5f8af370af09525e052ee14e539cecabc24ad6da1782448778361417e7c438091a59e7ca9f4a0c11642f7da4f2ebf1ba7a150a590bcc
+  languageName: node
+  linkType: hard
+
 "estree-walker@npm:^2.0.2":
   version: 2.0.2
   resolution: "estree-walker@npm:2.0.2"
@@ -6837,6 +6845,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-cleanup@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "js-cleanup@npm:1.2.0"
+  dependencies:
+    magic-string: "npm:^0.25.7"
+    perf-regexes: "npm:^1.0.1"
+    skip-regex: "npm:^1.0.2"
+  checksum: 10/c0c42ecda3342e64113a4fe4a072024038f47022f525a00badb3c11ffb0c0e8ada0fbf22074086ad2b3dc3f602f99a13fd6bd53fa2343b259f05e942b3cf1aa7
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^10.0.0":
   version: 10.0.0
   resolution: "js-tokens@npm:10.0.0"
@@ -7209,6 +7228,15 @@ __metadata:
   dependencies:
     yallist: "npm:^4.0.0"
   checksum: 10/fc1fe2ee205f7c8855fa0f34c1ab0bcf14b6229e35579ec1fd1079f31d6fc8ef8eb6fd17f2f4d99788d7e339f50e047555551ebd5e434dda503696e7c6591825
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.25.7":
+  version: 0.25.9
+  resolution: "magic-string@npm:0.25.9"
+  dependencies:
+    sourcemap-codec: "npm:^1.4.8"
+  checksum: 10/87a14b944bd169821cbd54b169a7ab6b0348fd44b5497266dc555dd70280744e9e88047da9dcb95675bdc23b1ce33f13398b0f70b3be7b858225ccb1d185ff51
   languageName: node
   linkType: hard
 
@@ -8726,6 +8754,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"perf-regexes@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "perf-regexes@npm:1.0.1"
+  checksum: 10/43008297d11f2af6cb989590e565060989272fd443fcf67d610bafec5387d3c9747aa5353530ff6598deee0b28f71fd5c5ebfa8a6d895efd38a5dec9fc02ab00
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.1.1":
   version: 1.1.1
   resolution: "picocolors@npm:1.1.1"
@@ -10185,6 +10220,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup-plugin-cleanup@npm:3.2.1":
+  version: 3.2.1
+  resolution: "rollup-plugin-cleanup@npm:3.2.1"
+  dependencies:
+    js-cleanup: "npm:^1.2.0"
+    rollup-pluginutils: "npm:^2.8.2"
+  peerDependencies:
+    rollup: ">=2.0"
+  checksum: 10/03fe39ead52374e018404e59018ac360f1ec54454f48a468466d0a37aa69358f162bb0554cb0bf911f25d8b9f542c1287a45662e0830a2eb3e320c615cc8cf61
+  languageName: node
+  linkType: hard
+
 "rollup-plugin-dts@npm:6.4.1":
   version: 6.4.1
   resolution: "rollup-plugin-dts@npm:6.4.1"
@@ -10201,6 +10248,15 @@ __metadata:
     "@babel/code-frame":
       optional: true
   checksum: 10/a18685fde4c59339cacb47e084ff589b39fc680d186b496b83197370295002f748066e3c9c62ced2eca1af0bca77d3096bb24905c40c0478a6d845d63531293d
+  languageName: node
+  linkType: hard
+
+"rollup-pluginutils@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "rollup-pluginutils@npm:2.8.2"
+  dependencies:
+    estree-walker: "npm:^0.6.1"
+  checksum: 10/f3dc20a8731523aff43e07fa50ed84857e9dd3ab81e2cfb0351d517c46820e585bfbd1530a5dddec3ac14d61d41eb9bf50b38ded987e558292790331cc5b0628
   languageName: node
   linkType: hard
 
@@ -10549,6 +10605,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"skip-regex@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "skip-regex@npm:1.0.2"
+  checksum: 10/a121a045860343da183c678d53b44c78283b018db71d60af8524ffef179fa028ef419629bb65198bfb9c09854123e7019cfd4c23be4e175254a50c7563b26e8e
+  languageName: node
+  linkType: hard
+
 "slash@npm:^5.1.0":
   version: 5.1.0
   resolution: "slash@npm:5.1.0"
@@ -10567,6 +10630,13 @@ __metadata:
   version: 1.2.1
   resolution: "source-map-js@npm:1.2.1"
   checksum: 10/ff9d8c8bf096d534a5b7707e0382ef827b4dd360a577d3f34d2b9f48e12c9d230b5747974ee7c607f0df65113732711bb701fe9ece3c7edbd43cb2294d707df3
+  languageName: node
+  linkType: hard
+
+"sourcemap-codec@npm:^1.4.8":
+  version: 1.4.8
+  resolution: "sourcemap-codec@npm:1.4.8"
+  checksum: 10/6fc57a151e982b5c9468362690c6d062f3a0d4d8520beb68a82f319c79e7a4d7027eeb1e396de0ecc2cd19491e1d602b2d06fd444feac9b63dd43fea4c55a857
   languageName: node
   linkType: hard
 

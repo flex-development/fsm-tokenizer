@@ -13,6 +13,7 @@ import type {
   PluginContext,
   RollupOptions
 } from 'rollup'
+import cleanup from 'rollup-plugin-cleanup'
 import { dts as dtsBundle } from 'rollup-plugin-dts'
 import pkg from './package.json' with { type: 'json' }
 
@@ -39,7 +40,7 @@ export default files.map(input => {
   const plugins: (Plugin | Plugin[])[] = []
 
   if (input.endsWith('.mjs')) {
-    plugins.push(resolve())
+    plugins.push(resolve(), cleanup({ comments: 'none' }))
   } else {
     plugins.push(resolve({ extensions: ['.d.mts', '.mts'] }), dts())
   }
