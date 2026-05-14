@@ -1,3 +1,11 @@
+## [1.0.0-alpha.4](https://github.com/flex-development/fsm-tokenizer/compare/1.0.0-alpha.3...1.0.0-alpha.4) (2026-05-14)
+
+### :package: Build
+
+- [[`bd3915f`](https://github.com/flex-development/fsm-tokenizer/commit/bd3915f0ef315f42951cf7c9b309e67b617e46cc)] remove comments from bundle
+- [[`2d349a1`](https://github.com/flex-development/fsm-tokenizer/commit/2d349a120726ec91bafd3de4b05c8f5db586f112)] **deps:** bump @flex-development/vfile-location from 1.1.0 to 1.1.1 in the flex-development group ([#334](https://github.com/flex-development/fsm-tokenizer/issues/334))
+- [[`47ee3ec`](https://github.com/flex-development/fsm-tokenizer/commit/47ee3ecb29451f4e846ecc402eb4ac064c6bad6f)] **deps:** bump debug and @types/debug ([#335](https://github.com/flex-development/fsm-tokenizer/issues/335))
+
 ## [1.0.0-alpha.3](https://github.com/flex-development/fsm-tokenizer/compare/1.0.0-alpha.1...1.0.0-alpha.3) (2026-05-14)
 
 ### :package: Build
@@ -578,6 +586,7 @@
 
 - [[`85f91f2`](https://github.com/flex-development/fsm-tokenizer/commit/85f91f22fbf2dcb23c07fae8eaf5b552841d15d5)] api
 - [[`3d662fc`](https://github.com/flex-development/fsm-tokenizer/commit/3d662fc675a0a92679b9fd040acd929b1a7f610a)] api
+
 
 
 
