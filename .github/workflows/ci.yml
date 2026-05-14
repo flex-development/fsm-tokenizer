@@ -25,6 +25,7 @@
 # - https://github.com/flex-development/jq-action
 # - https://github.com/flex-development/manver-action
 # - https://github.com/hmarr/debug-action
+# - https://github.com/shaneapowell/github-tweak-the-json
 # - https://github.com/streetsidesoftware/cspell-action
 # - https://yarnpkg.com/cli/pack
 
@@ -416,10 +417,6 @@ jobs:
       - typescript
     runs-on: ubuntu-latest
     steps:
-      - id: tarball
-        name: Get tarball path
-        run: |
-          echo "result=${{ format('@{0}-{1}-{2}.tgz', github.repository_owner, github.event.repository.name, needs.preflight.outputs.version) }}" >>$GITHUB_OUTPUT
       - id: checkout
         name: Checkout ${{ env.REF_NAME }}
         uses: actions/checkout@v6.0.2
@@ -448,12 +445,24 @@ jobs:
         env:
           TZ: ${{ vars.TZ }}
         run: echo "$(grease changelog)" >>$GITHUB_STEP_SUMMARY
+      - id: version
+        name: Update package.json version
+        uses: shaneapowell/github-tweak-the-json@v1
+        with:
+          action: write
+          filename: package.json
+          field: version
+          value: ${{ needs.preflight.outputs.version }}
       - id: pack
         name: Pack project
-        run: yarn pack -o ${{ steps.tarball.outputs.result }}
+        run: npm pack
       - id: typecheck
         name: Run typecheck
         run: yarn check:types:build
+      - id: tarball
+        name: Get tarball path
+        run: |
+          echo "result=${{ format('{0}-{1}-{2}.tgz', github.repository_owner, github.event.repository.name, needs.preflight.outputs.version) }}" >>$GITHUB_OUTPUT
       - id: attw
         name: Analyze types distribution
         run: attw ${{ steps.tarball.outputs.result }}

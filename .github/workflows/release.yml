@@ -21,6 +21,7 @@
 # - https://github.com/flex-development/jq-action
 # - https://github.com/flex-development/manver-action
 # - https://github.com/hmarr/debug-action
+# - https://github.com/shaneapowell/github-tweak-the-json
 # - https://yarnpkg.com/cli/pack
 
 ---
@@ -114,9 +115,17 @@ jobs:
       - id: yarn
         name: Install dependencies
         run: yarn --no-immutable && echo "$GITHUB_WORKSPACE/node_modules/.bin" >>$GITHUB_PATH
+      - id: build
+        name: Add build metadata to package.json
+        uses: shaneapowell/github-tweak-the-json@v1
+        with:
+          action: write
+          filename: package.json
+          field: build
+          value: ${{ github.event.pull_request.merge_commit_sha }}
       - id: pack
         name: Pack project
-        run: yarn pack -o %s-%v.tgz
+        run: npm pack
       - id: release-notes
         name: Generate release notes
         env:

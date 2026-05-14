@@ -6,11 +6,9 @@ set -e
 #
 # 1. run typecheck
 # 2. run tests
-# 3. pack project
+# 3. pack project and analyze types
 # 4. run postbuild typecheck
-# 5. analyze types
-# 6. create release chore commit
-# 7. cleanup
+# 5. create release chore commit
 #
 # References:
 #
@@ -20,8 +18,6 @@ set -e
 
 yarn typecheck
 yarn test:cov
-yarn pack
+attw --pack
 yarn check:types:build
-attw package.tgz
 git commit --allow-empty -S -s -m "release(chore): $(jq .version -r <<<$(grease bump -j $@))"
-yarn clean:pack

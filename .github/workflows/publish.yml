@@ -55,7 +55,7 @@ jobs:
         uses: flex-development/gh-release-url-action@2.1.0
         with:
           artifact: |
-            ${{ format('@{0}-{1}-{2}.tgz', github.repository_owner, github.event.repository.name, steps.version.outputs.manifest) }}
+            ${{ format('{0}-{1}-{2}.tgz', github.repository_owner, github.event.repository.name, steps.version.outputs.manifest) }}
           version: ${{ github.ref_name }}
       - id: dist
         name: Get dist tag
