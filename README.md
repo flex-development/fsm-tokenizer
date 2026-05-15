@@ -4,6 +4,8 @@
 [![npm](https://img.shields.io/npm/v/@flex-development/fsm-tokenizer.svg)](https://npmjs.com/package/@flex-development/fsm-tokenizer)
 [![npm downloads](https://img.shields.io/npm/dm/@flex-development/fsm-tokenizer.svg)](https://www.npmcharts.com/compare/@flex-development/fsm-tokenizer?interval=30)
 [![install size](https://packagephobia.now.sh/badge?p=@flex-development/fsm-tokenizer)](https://packagephobia.now.sh/result?p=@flex-development/fsm-tokenizer)
+[![minified bundle size](https://badgen.net/bundlephobia/min/@flex-development/fsm-tokenizer?cache)](https://bundlephobia.com/package/@flex-development/fsm-tokenizer)
+[![tree shaking suppport](https://badgen.net/bundlephobia/tree-shaking/@flex-development/fsm-tokenizer)](https://bundlephobia.com/package/@flex-development/fsm-tokenizer)
 [![codecov](https://codecov.io/gh/flex-development/fsm-tokenizer/graph/badge.svg?token=iA1BvaucoZ)](https://codecov.io/gh/flex-development/fsm-tokenizer)
 [![module type: esm](https://img.shields.io/badge/module%20type-esm-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 [![license](https://img.shields.io/github/license/flex-development/fsm-tokenizer.svg)](LICENSE.md)
